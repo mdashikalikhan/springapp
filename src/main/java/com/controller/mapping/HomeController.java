@@ -14,7 +14,7 @@ public class HomeController {
 	@Value("${index.page}") 
 	public String INDEX;
 	
-	@Value("${salutation.page}")
+	@Value("${salutation.page}") 
 	public String SALUTATION;
 	
 	@Value("${salutation.text}")
