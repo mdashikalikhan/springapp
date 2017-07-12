@@ -45,7 +45,7 @@ public class HomeController {
 	public String method7;
 	
 	@Value("${method8}")
-	public String method8;
+	public String method8; 
 	
 	@Value("${method9}")
 	public String method9;
