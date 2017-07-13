@@ -5,7 +5,9 @@ import java.util.Map;
 import javax.annotation.Resource;
 
 
+
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -20,5 +22,12 @@ public class TestController {
 	public String method0() {
 		System.out.println(messages.get("method0"));
 		return "method0";
+	}
+	
+	@RequestMapping(value="/{messageId}")
+	@ResponseBody
+	public String getMessage(@PathVariable("messageId") String messageId)
+	{
+		return messages.get(messageId);
 	}
 }
