@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 public class HTTPRequestTester {
 
-	private final String USER_AGENT = "Mozilla/5.0";
+	/*private final String USER_AGENT = "Mozilla/5.0";*/
 	
 	public static void main(String[] args) {
 		
