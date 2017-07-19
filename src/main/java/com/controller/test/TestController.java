@@ -32,4 +32,11 @@ public class TestController {
 	{
 		return messages.get(messageId);
 	}
+	
+	@RequestMapping(value="*", method={RequestMethod.GET, RequestMethod.POST})
+	@ResponseBody
+	public String fallbackMessage()
+	{
+		return "Invalid Request";
+	}
 }
