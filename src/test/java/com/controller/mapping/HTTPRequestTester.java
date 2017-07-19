@@ -13,29 +13,25 @@ public class HTTPRequestTester {
 
 	/*private final String USER_AGENT = "Mozilla/5.0";*/
 	
-	public static void main(String[] args) {
+	public static void main(String[] args)  {
 		
 		HTTPRequestTester request = new HTTPRequestTester();
-		try {
-			request.sendGetRequest("http://localhost:7001/springapp/method0");
-		} catch (IOException e) {
-			
-			e.printStackTrace();
-		}
 		
-		try {
-			request.sendPostRequest("http://localhost:7001/springapp/method9");
-		} catch (IOException e) {
-			
-			e.printStackTrace();
-		}
+			try {
+				request.sendGetRequest("http://localhost:7001/springapp/method0");
+				
+				request.sendPostRequest("http://localhost:7001/springapp/method9");				
+				
+				request.sendPostRequest("http://localhost:7001/springapp/method6");
+			} catch (IOException e) {
+				
+				e.printStackTrace();
+			}
 		
-		try {
-			request.sendPostRequest("http://localhost:7001/springapp/method6");
-		} catch (IOException e) {
+		
+		
 			
-			e.printStackTrace();
-		}
+		
 	}
 	
 	
@@ -56,8 +52,7 @@ public class HTTPRequestTester {
 		
 		String inputLine;
 		
-		while((inputLine = buffer.readLine())!=null)
-		{
+		while((inputLine = buffer.readLine())!=null) {
 			response.append(inputLine);
 		}
 		
@@ -93,8 +88,7 @@ public class HTTPRequestTester {
 		
 		String inputLine;
 		
-		while((inputLine = buffer.readLine())!=null)
-		{
+		while((inputLine = buffer.readLine())!=null) {
 			response.append(inputLine);
 		}
 		
