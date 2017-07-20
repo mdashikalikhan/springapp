@@ -26,7 +26,7 @@ public class TestController {
 		return "method0";
 	}
 	
-	@RequestMapping(value="/{messageId}", method=RequestMethod.GET)
+	@RequestMapping(value="/messages/{messageId}", method=RequestMethod.GET)
 	@ResponseBody
 	public String getMessage(@PathVariable("messageId") String messageId)
 	{
