@@ -19,7 +19,7 @@ public class TestController {
 	@Resource(name="messages")
 	private Map<String, String> messages;
 	
-	@RequestMapping(value={"/m0", "/m1", "m2"})
+	@RequestMapping(value={"/m0", "/m1", "/m2"})
 	@ResponseBody
 	public String method0() {
 		System.out.println(messages.get("method0"));
