@@ -6,6 +6,7 @@ public class StudentModel {
 	private Integer age;
 	private String sex;
 	private String semester;
+	private String aboutYou;
 	public Integer getId() {
 		return id;
 	}
@@ -36,7 +37,19 @@ public class StudentModel {
 	public void setSemester(String semester) {
 		this.semester = semester;
 	}
+	/**
+	 * @return the aboutYou
+	 */
+	public String getAboutYou() {
+		return aboutYou;
+	}
+	/**
+	 * @param aboutYou the aboutYou to set
+	 */
+	public void setAboutYou(String aboutYou) {
+		this.aboutYou = aboutYou;
+	}
 	
-
+	
 	
 }
