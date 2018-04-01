@@ -94,14 +94,14 @@ public class TestController {
 	@RequestMapping(value = "/ex/location", params = "id", method = RequestMethod.GET)
 	@ResponseBody
 	public String getLocationBySimplePathWithExplicitRequestParam(
-			@RequestParam("id") String id) {
-		return "Get specific location params with id = " + id;
+			@RequestParam("id") String id, @RequestParam("name") String name) {
+		return "Get specific location params with id = " + id +  " name = " + name;
 	}
 
 	@RequestMapping(value = "/ex/location", params = { "id", "name" }, method = RequestMethod.POST)
 	@ResponseBody
 	public String getLocationBySimplePathWithExplicitMultipleRequestParam(
-			@RequestParam("id") String id) {
-		return "Get specific location with multiple params with id = " + id;
+			@RequestParam("id") String id, @RequestParam("name") String name) {
+		return "Get specific location with multiple params with id = " + id + " name = " + name;
 	}
 }
