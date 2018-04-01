@@ -5,7 +5,7 @@ This Repository is for spring MVC testing purpose. It contains a MAVEN project w
 # 1st Commit
 
 # Git setup from eclipse
-[core]
+ [core]
 	symlinks = false
 	repositoryformatversion = 0
 	filemode = false
